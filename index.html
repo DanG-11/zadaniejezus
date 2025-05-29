@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licznik Odwiedzin i Kliknięć</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Licznik Odwiedzin i Kliknięć</h1>
+  <div class="counter">
+    <p>Odwiedziny: <span id="visit-count">0</span></p>
+    <p>Kliknięcia: <span id="click-count">0</span></p>
+    <button id="click-btn">Kliknij mnie</button>
+  </div>
+
+  <div class="log">
+    <h2>Logi:</h2>
+    <ul id="log-list"></ul>
+  </div>
+
+  <div class="buttons">
+    <button onclick="resetAll()">Resetuj wszystko</button>
+    <button onclick="resetVisits()">Resetuj odwiedziny</button>
+    <button onclick="resetSessionClicks()">Resetuj kliknięcia sesji</button>
+    <button onclick="resetLog()">Resetuj logi</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
